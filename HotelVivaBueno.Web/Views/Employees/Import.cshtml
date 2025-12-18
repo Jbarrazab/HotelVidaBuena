@@ -1,0 +1,52 @@
+@model HotelVivaBueno.Web.Models.ImportViewModel
+
+@{
+    ViewData["Title"] = "Importar Empleados";
+}
+
+<h2>Importar Empleados desde Excel</h2>
+<hr />
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @Html.Raw(TempData["SuccessMessage"])
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        @Html.Raw(TempData["ErrorMessage"])
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow">
+            <div class="card-body">
+                <form asp-controller="Employees" asp-action="Import" enctype="multipart/form-data" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    
+                    <div class="form-group mb-3">
+                        <label asp-for="File" class="control-label"></label>
+                        <input asp-for="File" class="form-control" type="file" accept=".xlsx" />
+                        <span asp-validation-for="File" class="text-danger"></span>
+                        <small class="form-text text-muted">Solamente archivos .xlsx. Estructura requerida: Documento, Nombres, Apellidos, ...</small>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" value="Subir y Procesar" class="btn btn-primary" />
+                        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,14 @@
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/bin/Debug/net8.0/HotelVivaBueno.Data.deps.json
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/bin/Debug/net8.0/HotelVivaBueno.Data.runtimeconfig.json
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/bin/Debug/net8.0/HotelVivaBueno.Data.dll
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/bin/Debug/net8.0/HotelVivaBueno.Data.pdb
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.csproj.AssemblyReference.cache
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.GeneratedMSBuildEditorConfig.editorconfig
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.AssemblyInfoInputs.cache
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.AssemblyInfo.cs
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.csproj.CoreCompileInputs.cache
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.dll
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/refint/HotelVivaBueno.Data.dll
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.pdb
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/HotelVivaBueno.Data.genruntimeconfig.cache
+/home/Coder/Documentos/C#/HotelVidaBuena/HotelVivaBueno.Data/obj/Debug/net8.0/ref/HotelVivaBueno.Data.dll

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelVivaBueno.Data", "HotelVivaBueno.Data\HotelVivaBueno.Data.csproj", "{EC9BE7F0-5458-47D2-BD33-67191F614EA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelVivaBueno.Api", "HotelVivaBueno.Api\HotelVivaBueno.Api.csproj", "{CA48F07A-917F-4DB5-A186-5F6D6C677D87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelVivaBueno.Web", "HotelVivaBueno.Web\HotelVivaBueno.Web.csproj", "{1C0A568A-BE10-409C-A600-6F5A2CB471DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelVivaBueno.Tests", "HotelVivaBueno.Tests\HotelVivaBueno.Tests.csproj", "{F2BB02F4-F0B5-42ED-ACC2-1205E7791857}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC9BE7F0-5458-47D2-BD33-67191F614EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC9BE7F0-5458-47D2-BD33-67191F614EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC9BE7F0-5458-47D2-BD33-67191F614EA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC9BE7F0-5458-47D2-BD33-67191F614EA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA48F07A-917F-4DB5-A186-5F6D6C677D87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA48F07A-917F-4DB5-A186-5F6D6C677D87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA48F07A-917F-4DB5-A186-5F6D6C677D87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA48F07A-917F-4DB5-A186-5F6D6C677D87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0A568A-BE10-409C-A600-6F5A2CB471DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0A568A-BE10-409C-A600-6F5A2CB471DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0A568A-BE10-409C-A600-6F5A2CB471DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0A568A-BE10-409C-A600-6F5A2CB471DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BB02F4-F0B5-42ED-ACC2-1205E7791857}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BB02F4-F0B5-42ED-ACC2-1205E7791857}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BB02F4-F0B5-42ED-ACC2-1205E7791857}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BB02F4-F0B5-42ED-ACC2-1205E7791857}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

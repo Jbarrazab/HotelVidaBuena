@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # Web Application (ASP.NET Core MVC)
+  web:
+    build:
+      context: .
+      dockerfile: HotelVivaBueno.Web/Dockerfile
+    container_name: hotelvidabuena-web
+    ports:
+      - "5000:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=maglev.proxy.rlwy.net;Port=28849;Database=railway;Username=postgres;Password=${DB_PASSWORD};SSL Mode=Prefer
+      - Jwt__Secret=${JWT_SECRET}
+      - Smtp__Host=smtp.gmail.com
+      - Smtp__Port=587
+      - Smtp__User=${SMTP_USER}
+      - Smtp__Pass=${SMTP_PASS}
+    depends_on:
+      - api
+    networks:
+      - hotelvidabuena-network
+    restart: unless-stopped
+
+  # API REST (ASP.NET Core Web API)
+  api:
+    build:
+      context: .
+      dockerfile: HotelVivaBueno.Api/Dockerfile
+    container_name: hotelvidabuena-api
+    ports:
+      - "5001:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__DefaultConnection=Host=maglev.proxy.rlwy.net;Port=28849;Database=railway;Username=postgres;Password=${DB_PASSWORD};SSL Mode=Prefer
+      - Jwt__Secret=${JWT_SECRET}
+      - Smtp__Host=smtp.gmail.com
+      - Smtp__Port=587
+      - Smtp__User=${SMTP_USER}
+      - Smtp__Pass=${SMTP_PASS}
+    networks:
+      - hotelvidabuena-network
+    restart: unless-stopped
+
+networks:
+  hotelvidabuena-network:
+    driver: bridge
